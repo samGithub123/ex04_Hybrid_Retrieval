@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Python: Create environment",
+            "type": "process",
+            "command": "py",
+            "args": [
+                "-3.11",
+                "-m",
+                "venv",
+                "${workspaceFolder}/.venv"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: Install dependencies",
+            "type": "process",
+            "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "args": [
+                "-m",
+                "pip",
+                "install",
+                "--upgrade",
+                "pip"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: Install requirements",
+            "dependsOn": "Python: Install dependencies",
+            "type": "process",
+            "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "args": [
+                "-m",
+                "pip",
+                "install",
+                "-r",
+                "${workspaceFolder}/requirements.txt"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: Run main.py",
+            "type": "process",
+            "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "args": [
+                "${workspaceFolder}/main.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

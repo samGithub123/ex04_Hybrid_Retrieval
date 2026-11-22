@@ -1,0 +1,11 @@
+[Upsert/02] Found 8 file(s) in 'D:\Project\IITMTraining\iitm-agentic-ai-training\exercises\RAG\ex04_Hybrid_Retrieval\data': ['FAQs.txt', 'about_us.txt', 'eligibility_documents.txt', 'home_loan.txt', 'loan_against_property.txt', 'no_cost_emi.txt', 'personal_loan.txt', 'two_wheeler_loan.txt']
+[Upsert/02] Loaded 8 raw document(s) from 'D:\Project\IITMTraining\iitm-agentic-ai-training\exercises\RAG\ex04_Hybrid_Retrieval\data'.
+
+[Upsert/02] First document id: FAQs.txt
+[Upsert/02] First document length: 7161 chars
+[Upsert/02] First document preview:
+BrightBridge Finance — FAQs
+Simple loans. Clear terms. Fast decisions.
+
+Disclaimer (read this once):
+The information below is for general guidance and marketing communication. Final eligibility, interest rates/APR, fees, and terms depend on your profile, internal policy, and applicable laws/regulations. Always review your Key Fact Statement (KFS) / sanction letter and loan agreement before proceed

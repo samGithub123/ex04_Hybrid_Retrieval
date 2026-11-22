@@ -1,0 +1,60 @@
+======================================================================
+STEP 1: Count Vectors (CountVectorizer)
+======================================================================
+Vocabulary (18 terms): ['at', 'atm', 'but', 'card', 'cash', 'completed', 'declined', 'failed', 'how', 'lock', 'lost', 'merchant', 'my', 'payment', 'pending', 'refund', 'to', 'withdrawal']
+
+Document x term count matrix:
+   at  atm  but  card  cash  ...  payment  pending  refund  to  withdrawal
+0   0    0    0     2     0  ...        1        0       0   0           0
+1   1    1    0     0     1  ...        0        0       0   0           1
+2   0    0    0     1     0  ...        0        0       0   1           0
+3   0    0    1     1     0  ...        1        1       1   0           0
+
+[4 rows x 18 columns]
+
+Query: 'failed card payment'
+Query count vector (compressed indices/values):
+<Compressed Sparse Row sparse matrix of dtype 'int64'
+	with 3 stored elements and shape (1, 18)>
+  Coords	Values
+  (0, 3)	1
+  (0, 7)	1
+  (0, 13)	1
+Query count vector (dense, for readability only):
+[[0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0]]
+
+Dot-product score of each document against the query:
+  score=4  ->  'card payment failed card declined'
+  score=1  ->  'cash withdrawal failed at atm'
+  score=1  ->  'how to lock my lost card'
+  score=2  ->  'card payment completed but merchant refund pending'
+
+======================================================================
+STEP 2: TF-IDF (TfidfVectorizer)
+======================================================================
+TF-IDF weights for a few key terms (rounded to 3 decimals):
+    card  payment  failed  refund
+0  2.446    1.511   1.511   0.000
+1  0.000    0.000   1.511   0.000
+2  1.223    0.000   0.000   0.000
+3  1.223    1.511   0.000   1.916
+
+Full TF-IDF matrix (dense, for readability only):
+[[0.         0.         0.         2.4462871  0.         0.
+  1.91629073 1.51082562 0.         0.         0.         0.
+  0.         1.51082562 0.         0.         0.         0.        ]
+ [1.91629073 1.91629073 0.         0.         1.91629073 0.
+  0.         1.51082562 0.         0.         0.         0.
+  0.         0.         0.         0.         0.         1.91629073]
+ [0.         0.         0.         1.22314355 0.         0.
+  0.         0.         1.91629073 1.91629073 1.91629073 0.
+  1.91629073 0.         0.         0.         1.91629073 0.        ]
+ [0.         0.         1.91629073 1.22314355 0.         1.91629073
+  0.         0.         0.         0.         0.         1.91629073
+  0.         1.51082562 1.91629073 1.91629073 0.         0.        ]]
+
+Note: 'card' appears in 3 of the 4 documents, so its IDF weight is low (common word); 'refund' appears in only 1 document, so it gets a much higher, more distinctive weight.
+
+======================================================================
+TF-IDF still only measures literal word overlap - it has no notion of MEANING. The real pipeline in Upsert/ uses BM25 (a refined TF-IDF) for exactly this kind of sparse/keyword signal, combined with dense embeddings for semantic matching. See Upsert/05_bm25_sparse_encoding.py and ../upsert.md.
+======================================================================

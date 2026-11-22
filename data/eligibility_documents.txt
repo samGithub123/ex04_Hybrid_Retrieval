@@ -1,0 +1,113 @@
+BrightBridge Finance — Eligibility & Documents Checklist
+Simple loans. Clear terms. Fast decisions.
+
+Purpose of this document
+This page helps you understand what we typically check for eligibility and what documents may be required. The exact checklist can vary based on product, location, ticket size, risk assessment, and policy updates. Always follow the document list shared in your application journey and the KFS/sanction letter.
+
+A) Universal checks (applies across products)
+1) Identity verification
+We verify that you are who you claim to be using KYC documents and validation checks.
+
+2) Address and contact verification
+We verify your current address and communication details for serviceability and compliance.
+
+3) Repayment capacity assessment
+We assess your monthly income, stability, and existing financial commitments to ensure the EMI is affordable.
+
+4) Credit profile assessment
+We review credit history, repayment behavior, and outstanding obligations (where data is available).
+
+B) Common document types (examples)
+Note: examples vary by country/region.
+• Identity proof: passport, national ID, driver’s license
+• Address proof: utility bill, rental agreement, bank statement, national ID (if address is included)
+• Income proof (salaried): salary slips, employment letter, tax documents, bank statements
+• Income proof (self-employed): business registration, tax returns, financial statements, bank statements
+• Photographs/signatures: as per application requirements
+
+C) Product-wise checklist
+
+1) Personal Loan (Unsecured)
+Typical documents:
+• KYC (identity + address)
+• Bank statements (recent months)
+• Salaried: salary slips, employment proof
+• Self-employed: business proof + financials/returns
+• Existing loan statements (if required for consolidation)
+
+What we evaluate:
+• Monthly income and stability
+• Credit history and current obligations
+• Debt-to-income and EMI affordability
+
+2) Home Loan (Secured by the property being purchased)
+Typical documents:
+Borrower documents:
+• KYC
+• Bank statements
+• Income proof (salary slips/ITR/business financials)
+Property documents (indicative):
+• Agreement to sell / allotment letter (as applicable)
+• Title deed and chain documents (for resale)
+• Approved building plan / layout approvals
+• Occupancy certificate / completion certificate (where applicable)
+• Property tax receipts
+• No-objection certificates (where required)
+Builder/project documents (for new/under-construction):
+• Project approvals, registrations, compliance documents
+
+What we evaluate:
+• Borrower eligibility and affordability
+• Property legal and technical status
+• Down payment capacity and funding plan
+
+3) Loan Against Property (LAP)
+Typical documents:
+Borrower documents:
+• KYC + income proof + bank statements
+Property documents:
+• Title deed and chain documents
+• Approved plan and compliance certificates (where applicable)
+• Property tax receipts
+• Existing loan details if the property is already mortgaged
+Business documents (if self-employed):
+• Registration and proof of operations, GST returns, financials
+
+What we evaluate:
+• Property valuation and legal standing
+• Borrower cashflow stability
+• LTV limits and existing encumbrances
+
+4) Two-Wheeler Loan
+Typical documents:
+• KYC
+• Income proof or bank statements (profile-dependent)
+• Dealer proforma invoice and vehicle details
+• Address verification documents
+
+What we evaluate:
+• Affordability and credit profile
+• Vehicle eligibility and invoice integrity
+• Down payment and tenor selection
+
+5) No-Cost EMI (Partner checkout financing)
+Typical documents/inputs:
+• Basic KYC and identity verification
+• Digital consent for credit check (where applicable)
+• Bank account/mandate setup for EMI collection
+Merchant inputs:
+• Eligible product, invoice value, and tenor selection
+
+What we evaluate:
+• Basic eligibility and credit checks
+• Successful authentication and mandate setup
+• Compliance with partner plan terms
+
+D) Tips to avoid application delays
+• Ensure your name and address match across documents where possible.
+• Keep bank statements readable and complete (avoid missing pages).
+• If self-employed, keep business vintage and cashflow evidence ready.
+• For secured loans, property documents completeness is a major factor—start early.
+
+Disclaimer (read this once):
+The information below is for general guidance and marketing communication. Final eligibility, interest rates/APR, fees, and terms depend on your profile, internal policy, and applicable laws/regulations. Always review your Key Fact Statement (KFS) / sanction letter and loan agreement before proceeding.

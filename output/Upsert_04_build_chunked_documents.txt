@@ -1,0 +1,14 @@
+[Upsert/02] Found 8 file(s) in 'D:\Project\IITMTraining\iitm-agentic-ai-training\exercises\RAG\ex04_Hybrid_Retrieval\data': ['FAQs.txt', 'about_us.txt', 'eligibility_documents.txt', 'home_loan.txt', 'loan_against_property.txt', 'no_cost_emi.txt', 'personal_loan.txt', 'two_wheeler_loan.txt']
+[Upsert/04] Chunking 8 raw document(s) ...
+[Upsert/04]   'FAQs.txt' -> 9 chunk(s)
+[Upsert/04]   'about_us.txt' -> 4 chunk(s)
+[Upsert/04]   'eligibility_documents.txt' -> 6 chunk(s)
+[Upsert/04]   'home_loan.txt' -> 5 chunk(s)
+[Upsert/04]   'loan_against_property.txt' -> 5 chunk(s)
+[Upsert/04]   'no_cost_emi.txt' -> 5 chunk(s)
+[Upsert/04]   'personal_loan.txt' -> 5 chunk(s)
+[Upsert/04]   'two_wheeler_loan.txt' -> 4 chunk(s)
+
+[Upsert/04] Built 43 chunk document(s) in total.
+[Upsert/04] First chunk document:
+{'id': 'FAQs.txt_chunk_0', 'text': 'BrightBridge Finance — FAQs\nSimple loans. Clear terms. Fast decisions.\n\nDisclaimer (read this once):\nThe information below is for general guidance and marketing communication. Final eligibility, interest rates/APR, fees, and terms depend on your profile, internal policy, and applicable laws/regulations. Always review your Key Fact Statement (KFS) / sanction letter and loan agreement before proceeding.\n\n1) Getting Started\n\nQ1. What types of loans do you offer?\nA. We offer Personal Loans, Home Loans, Loan Against Property (LAP), Two-Wheeler Loans, and No-Cost EMI financing through partner merchants. Each product is designed for a different need—short-term cash flow, long-term housing finance, secured borrowing, vehicle purchase, and installment financing at checkout.', 'source': 'D:\\Project\\IITMTraining\\iitm-agentic-ai-training\\exercises\\RAG\\ex04_Hybrid_Retrieval\\data\\FAQs.txt'}

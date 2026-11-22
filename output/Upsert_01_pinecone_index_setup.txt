@@ -1,0 +1,8 @@
+[Upsert/01] Connecting to Pinecone ...
+[Upsert/01] Ensuring index 'vector-loan-hybrid' exists (dim=384, metric=dotproduct) ...
+[Shared] Existing Pinecone indexes: ['vector-loan', 'vector-loan-hybrid', 'vector-hybrid', 'appliance-comunication-system']
+[Shared] Index 'vector-loan-hybrid' already exists - reusing it.
+[Shared] Existing Pinecone indexes: ['vector-loan', 'vector-loan-hybrid', 'vector-hybrid', 'appliance-comunication-system']
+[Shared] Index 'vector-loan-hybrid' already exists - reusing it.
+[Upsert/01] Ready to use index handle: Index(host='https://vector-loan-hybrid-dx0ctia.svc.aped-4627-b74a.pinecone.io')
+[Upsert/01] Index stats: DescribeIndexStatsResponse(dimension=384, total_vector_count=43, metric='dotproduct', namespaces=1)

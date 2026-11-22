@@ -1,0 +1,10 @@
+python-dotenv
+pinecone
+pinecone-text
+sentence-transformers
+scikit-learn
+pandas
+numpy
+pydantic
+langchain-core
+langchain-openai

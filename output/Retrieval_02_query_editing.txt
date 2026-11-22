@@ -1,0 +1,6 @@
+[Shared] Loading LLM 'gpt-4o-mini' ...
+[Retrieval/02] Editing question: 'Can I take money against my house without selling the property?'
+[Retrieval/02] Edited query:      'Can I obtain a loan against property without selling the residential property?'
+
+[Retrieval/02] Original: 'Can I take money against my house without selling the property?'
+[Retrieval/02] Edited:   'Can I obtain a loan against property without selling the residential property?'

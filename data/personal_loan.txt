@@ -1,0 +1,84 @@
+BrightBridge Finance — Personal Loan
+Simple loans. Clear terms. Fast decisions.
+
+Overview
+A Personal Loan is an unsecured loan designed for quick access to funds without the need to pledge collateral. It is suitable when you need flexible financing for planned or unplanned expenses—medical needs, education, travel, wedding expenses, home improvement, or consolidating multiple debts into a single EMI.
+
+Why customers choose our Personal Loan
+• Fast in-principle decision for many profiles once key details are verified
+• No collateral required (unsecured)
+• Flexible tenors and EMI options
+• Transparent communication via Key Fact Statement (KFS) and repayment schedule
+• Digital-first experience (where available), with offline support when needed
+
+Typical use cases
+Debt consolidation: Convert multiple high-interest dues into one structured EMI.
+Emergency expenses: Medical procedures, urgent repairs, family emergencies.
+Life milestones: Education fees, skill programs, relocation costs.
+Home improvements: Renovation, furniture, appliance purchases.
+
+Eligibility (high-level)
+Final eligibility depends on policy and assessment, but common factors include:
+• Age and residency criteria as per policy
+• Stable income source (salaried or self-employed)
+• Credit profile and repayment history
+• Existing obligations (other EMIs, credit card utilization)
+• Income-to-EMI comfort after considering monthly commitments
+
+Documents commonly requested
+KYC: identity and address proof (examples: national ID, passport, driving license).
+Income proof: salary slips or audited/declared income for self-employed.
+Bank statements: recent months to assess income and obligations.
+Employment/business proof: HR confirmation letter, business registration, GST returns, etc. (if applicable).
+
+Loan amount, tenor, and pricing
+Loan amount: depends on repayment capacity, income stability, and credit profile.
+Tenor: short to medium term (varies by program).
+Interest rate/APR: depends on risk profile, income stability, and credit score.
+Pricing is communicated upfront in your KFS. Avoid comparing only “rate”—APR helps you compare total cost.
+
+Fees and charges (typical components)
+• Processing fee: charged for underwriting and loan setup
+• Documentation/verification charges: if applicable
+• Late payment penalty: applies if EMI is delayed
+• Bounce charges: if auto-debit fails due to insufficient funds
+• Foreclosure/part-prepayment charges: may apply as per policy and agreement
+
+How the Personal Loan process works
+Step 1 — Apply
+Submit basic details (identity, contact, income type, and requested amount/tenor).
+Step 2 — Verification
+We verify identity, credit profile, and basic income indicators.
+Step 3 — Offer
+If approved, you receive an offer with the KFS, APR, EMI, and schedule.
+Step 4 — Acceptance
+You accept the offer, provide required documents, and complete e-mandate setup.
+Step 5 — Disbursal
+Funds are disbursed to your bank account after final checks.
+
+Repayment and EMI management
+• EMIs are generally collected via auto-debit (e-mandate/NACH) on a fixed date.
+• Ensure sufficient balance a day before the due date to avoid bounce charges.
+• You can track due dates and outstanding amounts through the portal/app (where available) or support.
+
+Prepayment and foreclosure
+Many personal loans allow partial prepayment or full closure, subject to terms.
+Important: prepayment rules can vary by loan type (fixed/variable), vintage, and policy. Always refer to your loan agreement/KFS for the exact conditions.
+
+Responsible borrowing tips
+• Borrow what you can comfortably repay. Keep an EMI buffer for uncertain months.
+• Avoid taking multiple unsecured loans simultaneously; it strains cashflow.
+• Pay on time: it protects your credit and reduces penalty costs.
+• If you foresee an issue, contact support early.
+
+Customer support and grievance redressal
+We offer support through phone, email, and branch/partner channels (availability varies).
+For escalation, follow the steps listed in “privacy_terms.txt” under grievance redressal.
+
+Quick glossary
+EMI: Equal Monthly Installment.
+APR: Annual Percentage Rate, a broader cost measure.
+KFS: Key Fact Statement summarizing key loan terms.
+
+Disclaimer (read this once):
+The information below is for general guidance and marketing communication. Final eligibility, interest rates/APR, fees, and terms depend on your profile, internal policy, and applicable laws/regulations. Always review your Key Fact Statement (KFS) / sanction letter and loan agreement before proceeding.

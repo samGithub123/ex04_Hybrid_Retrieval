@@ -1,0 +1,119 @@
+======================================================================
+[Retrieval/06] STEP 1 - Connect to Pinecone + embedding model + BM25 + LLM
+======================================================================
+[Shared] Loading dense embedding model 'paraphrase-MiniLM-L6-v2' ...
+[Shared] Loaded fitted BM25 encoder from 'D:\Project\IITMTraining\iitm-agentic-ai-training\exercises\RAG\ex04_Hybrid_Retrieval\json\bm25_params.json'.
+[Shared] Loading LLM 'gpt-4o-mini' ...
+[Retrieval/06] Connected. Index stats: DescribeIndexStatsResponse(dimension=384, total_vector_count=43, metric='dotproduct', namespaces=1)
+[Retrieval/04] Loading cross-encoder 'cross-encoder/ms-marco-MiniLM-L-6-v2' ...
+[Retrieval/06] Chain built: question -> edited_query -> retrieved_documents -> reranked_documents -> rendered_context -> sources -> prompt -> answer
+
+Ask a loan-related question (type 'exit' or 'bye' to quit).
+Example questions: ['Can I take money against my house without selling the property?', 'What documents do I need for a personal loan?', 'Is No-Cost EMI really interest free?', 'Does BrightBridge offer student loans for studying abroad?']
+
+Q: 
+######################################################################
+# QUESTION: Can I take money against my house without selling the property?
+######################################################################
+[Retrieval/02] Editing question: 'Can I take money against my house without selling the property?'
+[Retrieval/02] Edited query:      'Can I obtain a loan against property without selling the residential property?'
+[Retrieval/03] Encoding query 'Can I obtain a loan against property without selling the residential property?' at alpha=0.5 (0=pure sparse, 1=pure dense) ...
+[Retrieval/03] Dense query vector: 384 dims, first 5 = [0.025738855823874474, 0.021672431379556656, -0.061555955559015274, 0.03667913377285004, -0.04610009118914604]
+[Retrieval/03] Sparse query vector: 6 non-zero term(s) -> {'indices': [2485669278, 2570200638, 2940979805, 1477105254, 4176435237, 3305953717], 'values': [0.2738970934224079, 0.01295817230463193, 0.07023645079252619, 0.20521069432408612, 0.23248689483226181, 0.20521069432408612]}
+[Retrieval/03] Scaled dense vector first 5 dims: [0.012869427911937237, 0.010836215689778328, -0.030777977779507637, 0.01833956688642502, -0.02305004559457302]
+[Retrieval/03] Scaled sparse vector:              {'indices': [2485669278, 2570200638, 2940979805, 1477105254, 4176435237, 3305953717], 'values': [0.13694854671120396, 0.006479086152315965, 0.035118225396263095, 0.10260534716204306, 0.11624344741613091, 0.10260534716204306]}
+[Retrieval/03] Retrieved 8 candidate(s) (top_k=8, alpha=0.5):
+[Retrieval/03]   [1] home_loan.txt_chunk_0 score=0.3435 text='BrightBridge Finance — Home Loan Simple loans. Clear terms. Fast decisions.  Ove'...
+[Retrieval/03]   [2] loan_against_property.txt_chunk_2 score=0.2998 text='Property evaluation and due diligence 1) Technical/valuation: assesses market va'...
+[Retrieval/03]   [3] loan_against_property.txt_chunk_1 score=0.2950 text='Common end-use examples Business needs: working capital, expansion, equipment pu'...
+[Retrieval/03]   [4] FAQs.txt_chunk_6 score=0.2900 text='5) Product-Specific FAQs  Personal Loan Q18. What can I use a personal loan for?'...
+[Retrieval/03]   [5] loan_against_property.txt_chunk_0 score=0.2879 text='BrightBridge Finance — Loan Against Property (LAP) Simple loans. Clear terms. Fa'...
+[Retrieval/03]   [6] home_loan.txt_chunk_2 score=0.2764 text='Documents commonly requested Borrower KYC: identity and address proof. Income do'...
+[Retrieval/03]   [7] eligibility_documents.txt_chunk_3 score=0.2706 text='What we evaluate: • Borrower eligibility and affordability • Property legal and '...
+[Retrieval/03]   [8] loan_against_property.txt_chunk_4 score=0.2598 text='Important considerations before choosing LAP • A secured loan means the collater'...
+[Retrieval/04] Reranking 8 candidate(s) against ORIGINAL question: 'Can I take money against my house without selling the property?'
+[Retrieval/04] Cross-encoder scores (all 8 candidate(s), best first):
+[Retrieval/04]   [KEEP] FAQs.txt_chunk_6 cross_encoder_score=-4.9512
+[Retrieval/04]   [KEEP] loan_against_property.txt_chunk_0 cross_encoder_score=-5.5427
+[Retrieval/04]   [KEEP] home_loan.txt_chunk_0 cross_encoder_score=-8.4264
+[Retrieval/04]   [drop] eligibility_documents.txt_chunk_3 cross_encoder_score=-9.8490
+[Retrieval/04]   [drop] loan_against_property.txt_chunk_4 cross_encoder_score=-10.4026
+[Retrieval/04]   [drop] home_loan.txt_chunk_2 cross_encoder_score=-10.4363
+[Retrieval/04]   [drop] loan_against_property.txt_chunk_2 cross_encoder_score=-10.9424
+[Retrieval/04]   [drop] loan_against_property.txt_chunk_1 cross_encoder_score=-10.9910
+[Retrieval/04] Kept top 3 (top_k=3) for context building (Step 5).
+[Retrieval/05] Building context from 3 reranked chunk(s), max_chars=1600 ...
+[Retrieval/05]   Source 1 added as-is (927 chars).
+[Retrieval/05]   Source 2 truncated to fit remaining budget (827 -> 673 chars).
+[Retrieval/05]   budget exhausted before Source 3 - stopping.
+[Retrieval/05] Final rendered context: 1607 chars total.
+[Retrieval/05] Deduplicated sources (3): ['FAQs.txt', 'loan_against_property.txt', 'home_loan.txt']
+[Retrieval/06] Rendering final prompt (system rules + context + question) ...
+[Retrieval/06] Rendered prompt messages:
+[SystemMessage(content="\nYou are the BrightBridge Finance Loan Assistant. Answer using ONLY the\nretrieved context below, which comes from official BrightBridge loan\nproduct documents, eligibility guides and FAQs.\n\nRules:\n- Use only the retrieved context. Never use outside knowledge and never guess.\n- Never invent specific interest rates, fees, tenors or eligibility numbers\n  that are not explicitly present in the context.\n- If the context does not contain enough information to answer, say so\n  plainly - do not invent an answer.\n- If the context mixes guidance from more than one loan product and the\n  question doesn't specify which one, say so and ask the user to confirm\n  the exact product instead of blending guidance.\n- Prefer short, direct bullet points or steps.\n- This is a RAG assistant only - do not offer to take any action (no loan\n  application submission, no fund transfer, no ticket creation).\n", additional_kwargs={}, response_metadata={}), SystemMessage(content='Context:\n[Source 1] FAQs.txt (retrieval_score=0.290, rerank_score=-4.951)\n5) Product-Specific FAQs\n\nPersonal Loan\nQ18. What can I use a personal loan for?\nA. Common uses include medical expenses, education, travel, home improvement, wedding expenses, debt consolidation, and urgent cash needs. We do not fund prohibited or illegal purposes.\n\nHome Loan\nQ19. Do you finance new construction, resale, and balance transfer?\nA. Many home loan programs cover purchase of ready property, resale properties, construction, and in certain cases balance transfer from another lender, subject to due diligence and property/legal checks.\n\nLoan Against Property (LAP)\nQ20. How is LAP different from a home loan?\nA. LAP is a secured loan where you pledge an existing residential/commercial property to borrow for broader purposes such as business expansion, education, or large expenses. Home loans are typically for purchasing or constructing a home.\n\n---\n\n[Source 2] loan_against_property.txt (retrieval_score=0.288, rerank_score=-5.543)\nBrightBridge Finance — Loan Against Property (LAP)\nSimple loans. Clear terms. Fast decisions.\n\nOverview\nA Loan Against Property (LAP) is a secured loan where you pledge an owned property (residential or commercial, subject to policy) as collateral to borrow funds for a wide range of needs. LAP is often used for business expansion, education funding, medical expenses, or consolidating high-cost debt, while benefiting from longer tenors than typical unsecured loans.\n\nWhy LAP can be useful\n• Higher ticket sizes may be available because the loan is secured\n• Longer repayment tenure can re', additional_kwargs={}, response_metadata={}), HumanMessage(content='Can I take money against my house without selling the property?', additional_kwargs={}, response_metadata={})]
+
+----------------------------------------------------------------------
+[Retrieval/06] STAGE SUMMARY
+----------------------------------------------------------------------
+
+1) edited_query (Step 2):
+   Can I obtain a loan against property without selling the residential property?
+
+2) retrieved_documents (Step 3, 8 candidate(s)):
+   [1] home_loan.txt_chunk_0  score=0.3435
+   [2] loan_against_property.txt_chunk_2  score=0.2998
+   [3] loan_against_property.txt_chunk_1  score=0.2950
+   [4] FAQs.txt_chunk_6  score=0.2900
+   [5] loan_against_property.txt_chunk_0  score=0.2879
+   [6] home_loan.txt_chunk_2  score=0.2764
+   [7] eligibility_documents.txt_chunk_3  score=0.2706
+   [8] loan_against_property.txt_chunk_4  score=0.2598
+
+3) reranked_documents (Step 4, 3 kept):
+   FAQs.txt_chunk_6  cross_encoder_score=-4.9512
+   loan_against_property.txt_chunk_0  cross_encoder_score=-5.5427
+   home_loan.txt_chunk_0  cross_encoder_score=-8.4264
+
+4) rendered_context (Step 5):
+[Source 1] FAQs.txt (retrieval_score=0.290, rerank_score=-4.951)
+5) Product-Specific FAQs
+
+Personal Loan
+Q18. What can I use a personal loan for?
+A. Common uses include medical expenses, education, travel, home improvement, wedding expenses, debt consolidation, and urgent cash needs. We do not fund prohibited or illegal purposes.
+
+Home Loan
+Q19. Do you finance new construction, resale, and balance transfer?
+A. Many home loan programs cover purchase of ready property, resale properties, construction, and in certain cases balance transfer from another lender, subject to due diligence and property/legal checks.
+
+Loan Against Property (LAP)
+Q20. How is LAP different from a home loan?
+A. LAP is a secured loan where you pledge an existing residential/commercial property to borrow for broader purposes such as business expansion, education, or large expenses. Home loans are typically for purchasing or constructing a home.
+
+---
+
+[Source 2] loan_against_property.txt (retrieval_score=0.288, rerank_score=-5.543)
+BrightBridge Finance — Loan Against Property (LAP)
+Simple loans. Clear terms. Fast decisions.
+
+Overview
+A Loan Against Property (LAP) is a secured loan where you pledge an owned property (residential or commercial, subject to policy) as collateral to borrow funds for a wide range of needs. LAP is often used for business expansion, education funding, medical expenses, or consolidating high-cost debt, while benefiting from longer tenors than typical unsecured loans.
+
+Why LAP can be useful
+• Higher ticket sizes may be available because the loan is secured
+• Longer repayment tenure can re
+
+5) sources (Step 5):
+[{'source': 'D:\\Project\\IITMTraining\\iitm-agentic-ai-training\\exercises\\RAG\\ex04_Hybrid_Retrieval\\data\\FAQs.txt', 'source_name': 'FAQs.txt'}, {'source': 'D:\\Project\\IITMTraining\\iitm-agentic-ai-training\\exercises\\RAG\\ex04_Hybrid_Retrieval\\data\\loan_against_property.txt', 'source_name': 'loan_against_property.txt'}, {'source': 'D:\\Project\\IITMTraining\\iitm-agentic-ai-training\\exercises\\RAG\\ex04_Hybrid_Retrieval\\data\\home_loan.txt', 'source_name': 'home_loan.txt'}]
+
+6) final answer (Step 6):
+Yes, you can take money against your house without selling the property through a Loan Against Property (LAP). This is a secured loan where you pledge your owned residential or commercial property as collateral to borrow funds.
+
+Sources:
+- FAQs.txt
+- loan_against_property.txt
+- home_loan.txt
+
+(4.16s)
+
+Q: Goodbye!

@@ -1,0 +1,15 @@
+[Retrieval/01] Connecting to Pinecone ...
+[Retrieval/01] Connected to index: Index(host='https://vector-loan-hybrid-dx0ctia.svc.aped-4627-b74a.pinecone.io')
+[Retrieval/01] Index stats: DescribeIndexStatsResponse(dimension=384, total_vector_count=43, metric='dotproduct', namespaces=1)
+[Shared] Loading dense embedding model 'paraphrase-MiniLM-L6-v2' ...
+[Retrieval/01] Loaded embedding model: paraphrase-MiniLM-L6-v2
+[Shared] Loaded fitted BM25 encoder from 'D:\Project\IITMTraining\iitm-agentic-ai-training\exercises\RAG\ex04_Hybrid_Retrieval\json\bm25_params.json'.
+[Retrieval/01] Loaded BM25 encoder from 'D:\Project\IITMTraining\iitm-agentic-ai-training\exercises\RAG\ex04_Hybrid_Retrieval\json\bm25_params.json'
+[Shared] Loading LLM 'gpt-4o-mini' ...
+[Retrieval/01] Loaded LLM: gpt-4o-mini
+[Retrieval/01] LLM sanity check: Hello!
+
+[Retrieval/01] Sanity check: load BM25 from JSON into a fresh encoder
+[Shared] Loaded fitted BM25 encoder from 'D:\Project\IITMTraining\iitm-agentic-ai-training\exercises\RAG\ex04_Hybrid_Retrieval\json\bm25_params.json'.
+[Retrieval/01] Sample doc sparse vector:   {'indices': [741580288, 2673099881, 771291085], 'values': [0.7509566000286468, 0.7509566000286468, 0.7509566000286468]}
+[Retrieval/01] Sample query sparse vector: {'indices': [2673099881, 741580288], 'values': [0.5, 0.5]}

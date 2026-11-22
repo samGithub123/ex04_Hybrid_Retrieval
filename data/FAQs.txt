@@ -1,0 +1,102 @@
+BrightBridge Finance — FAQs
+Simple loans. Clear terms. Fast decisions.
+
+Disclaimer (read this once):
+The information below is for general guidance and marketing communication. Final eligibility, interest rates/APR, fees, and terms depend on your profile, internal policy, and applicable laws/regulations. Always review your Key Fact Statement (KFS) / sanction letter and loan agreement before proceeding.
+
+
+1) Getting Started
+
+Q1. What types of loans do you offer?
+A. We offer Personal Loans, Home Loans, Loan Against Property (LAP), Two-Wheeler Loans, and No-Cost EMI financing through partner merchants. Each product is designed for a different need—short-term cash flow, long-term housing finance, secured borrowing, vehicle purchase, and installment financing at checkout.
+
+Q2. How quickly can I get a decision?
+A. Many applications get an in-principle decision within minutes if we have complete information and your identity/credit checks are successful. Some cases require additional verification (income, residence, property documents) and may take longer.
+
+Q3. Do you require collateral?
+A. Personal Loans and No-Cost EMI are typically unsecured, meaning they don’t need property collateral. Home Loans and LAP are secured by property. Two-Wheeler Loans are generally secured against the vehicle being financed.
+
+Q4. What is “APR” and how is it different from an interest rate?
+A. The interest rate is the cost you pay on the principal as per the chosen rate type (fixed/variable). APR (Annual Percentage Rate) is a broader measure that may include applicable fees and charges spread over the year. APR helps you compare the total cost of credit across lenders.
+
+Q5. What is a Key Fact Statement (KFS)?
+A. A KFS is a concise summary of the most important loan terms—amount, tenor, rate, EMI, APR, fees, penalty charges, and customer grievance channels. We recommend reading it carefully before accepting an offer.
+
+2) Eligibility, Documents, and Checks
+
+Q6. What documents do I need?
+A. It depends on the product and your profile. Commonly needed items include:
+• Identity & address proof (KYC)
+• Income proof (salary slips or business financials)
+• Bank statements
+• Property documents for secured loans
+A product-wise checklist is available in “eligibility_documents.txt”.
+
+Q7. Do you check my credit score?
+A. Yes. Credit checks are an important part of responsible lending. A higher and stable credit profile usually improves approval odds and can help you qualify for better pricing.
+
+Q8. I have a thin credit file or no credit history—can I still apply?
+A. You can. We may use alternative signals like bank cashflow, employment stability, and repayment behavior (where available). However, terms may differ and approvals are not guaranteed.
+
+Q9. Why do you ask for bank statements?
+A. Bank statements help us understand your income consistency, expense commitments, and repayment capacity. It also helps reduce paperwork by verifying details digitally.
+
+3) Pricing, Fees, and Repayment
+
+Q10. What fees should I expect?
+A. Potential fees can include a processing fee, documentation charges, insurance (optional), and government taxes/charges where applicable. Delays may lead to penalty charges. The exact fee schedule is displayed in the KFS/sanction letter.
+
+Q11. Is there any penalty for late payment?
+A. Yes. Late payments can attract a penalty charge and may impact your credit history. If you anticipate a delay, contact us early—sometimes we can suggest options to avoid repeated defaults.
+
+Q12. Can I prepay or foreclose my loan?
+A. Many loans allow partial prepayment and foreclosure after certain conditions. The availability and charges vary by product and by your loan agreement. Always refer to your KFS/loan agreement.
+
+Q13. How are EMIs calculated?
+A. EMIs are calculated based on loan amount, interest rate, and tenor. Some products use reducing-balance interest; others may have different structures. Your EMI schedule is shown before you accept the loan.
+
+Q14. How do I repay?
+A. Repayments are usually collected via auto-debit (e.g., NACH/e-mandate), bank transfer, or partner payment channels. For Two-Wheeler Loans and No-Cost EMI, repayments may be linked to the purchase invoice and merchant platform.
+
+4) Service & Support
+
+Q15. How can I track my loan?
+A. You can track status through our customer portal/app (where available), SMS/email updates, and by contacting support. We recommend keeping your registered mobile/email active for timely updates.
+
+Q16. How do I update my address, mobile number, or email?
+A. You can request changes through our customer support after identity verification. Some updates may require supporting documents.
+
+Q17. What if I lose my job or face a temporary cash crunch?
+A. If you face genuine difficulty, talk to us early. Options depend on your product and policy—possible paths may include rescheduling, moratorium-like relief (if available), or restructuring. These options are not automatic and may have eligibility conditions.
+
+5) Product-Specific FAQs
+
+Personal Loan
+Q18. What can I use a personal loan for?
+A. Common uses include medical expenses, education, travel, home improvement, wedding expenses, debt consolidation, and urgent cash needs. We do not fund prohibited or illegal purposes.
+
+Home Loan
+Q19. Do you finance new construction, resale, and balance transfer?
+A. Many home loan programs cover purchase of ready property, resale properties, construction, and in certain cases balance transfer from another lender, subject to due diligence and property/legal checks.
+
+Loan Against Property (LAP)
+Q20. How is LAP different from a home loan?
+A. LAP is a secured loan where you pledge an existing residential/commercial property to borrow for broader purposes such as business expansion, education, or large expenses. Home loans are typically for purchasing or constructing a home.
+
+Two-Wheeler Loan
+Q21. Do you finance both new and used two-wheelers?
+A. Programs often focus on new vehicles; used-vehicle financing may be available in select cases/locations subject to vehicle inspection and policy.
+
+No-Cost EMI
+Q22. Is “No-Cost EMI” truly zero interest?
+A. No-Cost EMI typically means you pay no additional interest cost compared to paying the product price upfront because the interest is offset through a merchant-funded discount (often called “subvention”). You still pay the principal in installments, and certain fees or taxes may apply depending on the plan.
+
+Q23. Can I close No-Cost EMI early?
+A. Some plans allow early closure; however, the merchant discount/subvention may be adjusted and foreclosure charges may apply. The final terms are shared at checkout and in your schedule.
+
+6) Security & Privacy
+
+Q24. Is my data safe?
+A. We use reasonable security controls to protect customer data, and we collect only what is required for servicing your loan. Please refer to “privacy_terms.txt” for details on data usage, retention, and customer rights.
+
+If you want, tell me your target audience (salaried, self-employed, both), typical ticket sizes, and preferred tone (strictly formal vs friendly), and I can tailor these documents to your exact product strategy.
